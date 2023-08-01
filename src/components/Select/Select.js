@@ -14,7 +14,9 @@ const Select = ({ label, value, onChange, children }) => {
       value = {value} 
       onChange = {onChange}
     >
-      <SelectedWrapper>
+      <SelectedWrapper
+        aria-hidden = "true"
+      >
         <span>
           {displayedValue}
         </span>
